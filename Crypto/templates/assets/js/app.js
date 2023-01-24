@@ -31,3 +31,15 @@ wsbnb.onmessage = (event) => {
     BnbPriceElement.style.color = !lastPrice || lastPrice === price ? 'white' : price > lastPrice ? 'green' : 'red';
     lastPrice = price;
 };
+
+setInterval(function() {
+    wsbtc.send("refresh");
+}, 3000);
+
+setInterval(function() {
+    wsdoge.send("refresh");
+}, 3000);
+
+setInterval(function() {
+    wsbnb.send("refresh");
+}, 3000);
