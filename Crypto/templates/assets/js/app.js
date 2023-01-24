@@ -32,7 +32,7 @@ wsbnb.onmessage = (event) => {
     lastPrice = price;
 };
 
-setInterval(function() {
+/*setInterval(function() {
     wsbtc.send("refresh");
 }, 3000);
 
@@ -43,3 +43,4 @@ setInterval(function() {
 setInterval(function() {
     wsbnb.send("refresh");
 }, 3000);
+*/
